@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DarkBot-OS Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #output {
+      margin-top: 20px;
+      height: 200px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    #output p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>DarkBot-OS Control</h1>
+  <div>
+    <label for="command">Command:</label>
+    <input type="text" id="command">
+    <button id="send">Send</button>
+  </div>
+  <div id="output"></div>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:3000');
+    const commandInput = document.getElementById('command');
+    const sendButton = document.getElementById('send');
+    const output = document.getElementById('output');
+
+    ws.onopen = () => {
+      console.log('Connected to server');
+    };
+
+    ws.onmessage = (event) => {
+      const message = document.createElement('p');
+      message.textContent = `Teensy: ${event.data}`;
+      output.appendChild(message);
+      output.scrollTop = output.scrollHeight;
+    };
+
+    sendButton.addEventListener('click', () => {
+      const command = commandInput.value;
+      if (command) {
+        ws.send(command);
+        const message = document.createElement('p');
+        message.textContent = `Sent: ${command}`;
+        output.appendChild(message);
+        output.scrollTop = output.scrollHeight;
+        commandInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
