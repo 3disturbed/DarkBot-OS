@@ -24,9 +24,39 @@ bash
 
 npm install express http ws serialport node-fetch tar fs-extra
 
-Step 3: Run the Server
+Step 3: Set Up PM2
 
-Start your server using the start script:
+PM2 is a process manager for Node.js applications that will help you keep your application running and manage restarts.
+
+Install PM2 globally on your system:
+
+bash
+
+npm install pm2 -g
+
+Start your application using PM2:
+
+bash
+
+pm2 start updater.js --name darkbot-updater
+pm2 start server.js --name darkbot-server
+
+Save the PM2 process list and corresponding environments:
+
+bash
+
+pm2 save
+
+Set up PM2 to start on boot:
+
+bash
+
+pm2 startup
+
+Follow the instructions displayed in your terminal to complete the setup.
+Step 4: Run the Server
+
+Start your server using the PM2 start script:
 
 bash
 
