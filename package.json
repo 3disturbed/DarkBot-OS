@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "node updater.js & node server.js",
+    "restart": "pm2 restart all" // assuming you are using pm2 for process management
+  }
+}
