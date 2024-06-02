@@ -1,0 +1,98 @@
+Core Components
+
+    Raspberry Pi
+        Raspberry Pi 4 Model B (or similar)
+        MicroSD card (16GB or higher) with Raspberry Pi OS
+        Raspberry Pi power supply (5V, 3A)
+
+    Teensy 4.1
+        Teensy 4.1 development board
+        Header pins (if not pre-soldered)
+
+Communication and Isolation
+
+    Digital Isolators
+        ADUM1201 dual-channel digital isolators (Quantity: 7 for 14 channels)
+        Optional: ISO7763 6-channel digital isolators (if preferred)
+
+Motor Control
+
+    Motor Drivers
+        DRV8833 motor drivers (Quantity: 2 for 4 motors)
+        Heatsinks for DRV8833 motor drivers
+
+    DC Motors
+        4 DC motors (1.5A constant, 3A peak)
+
+Servo Control
+
+    Servos
+        10 standard servos
+
+Power and Connectivity
+
+    Power Supply
+        3.3V and 5V power supplies (depending on motor and servo requirements)
+
+    Connecting Wires and Cables
+        Jumper wires (male-to-male, female-to-female)
+        Ribbon cables for clean connections
+
+Additional Components
+
+    Optocouplers
+        TLP281 optocouplers (if required for additional isolation)
+
+    Breadboard or Custom PCB
+        Breadboard for prototyping
+        Custom PCB for final build (optional)
+
+Storage
+
+    SD Card
+        MicroSD card (32GB or higher) for logging data
+
+Other Components
+
+    Resistors and Capacitors
+        Various resistors and capacitors for circuit stability and filtering
+
+    Headers and Connectors
+        Pin headers for Teensy and other modules
+        Connectors for motors and servos
+
+Tools and Accessories
+
+    Soldering Equipment
+        Soldering iron and solder
+        Soldering station with temperature control
+
+    Multimeter
+        For measuring voltage, current, and resistance
+
+    Power Supply
+        Bench power supply for testing
+
+Optional Accessories
+
+    Enclosure
+        Custom or pre-made enclosure for housing the project
+
+    Heat Shrink Tubing
+        For insulating connections
+
+Example Sources for Parts
+
+    Raspberry Pi and Accessories: Raspberry Pi Foundation
+    Teensy 4.1: PJRC Store
+    ADUM1201 and ISO7763: Digi-Key, Mouser Electronics
+    DRV8833 Motor Drivers: Texas Instruments, SparkFun
+    Servos and DC Motors: Amazon, Adafruit
+    Heatsinks: Amazon, eBay
+    Connectors and Cables: Adafruit, SparkFun
+    Resistors and Capacitors: Digi-Key, Mouser Electronics
+    Breadboard and PCB: Adafruit, SparkFun
+
+Summary
+
+This parts list includes all the necessary components to build the DarkBot-Hat project. It covers the core components, communication and isolation devices, motor and servo control elements, power supplies, connectivity items, additional components for circuit stability, tools for assembly, and optional accessories for enhancement. By sourcing these parts from reputable suppliers, you can ensure the quality and reliability of your DarkBot-Hat project.
