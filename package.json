@@ -1,14 +1,14 @@
 {
   "name": "DarkBot-OS",
   "version": "1.0.0",
-  "description": "A robust and modular Pi Hat system",
+  "description": "A robust and modular Pi Hat robotics system",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "restart": "pm2 restart all"
   },
-  "author": "Your Name",
+  "author": "Dark Firebeard (Ben Darlington)",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
