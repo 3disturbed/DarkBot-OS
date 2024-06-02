@@ -44,7 +44,7 @@ Protect your system with advanced security measures, including two-factor authen
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/darkbot-os.git
+   git clone https://github.com/3disturbed/darkbot-os.git
    ```
 2. Navigate to the project directory:
    ```sh
