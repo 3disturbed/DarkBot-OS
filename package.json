@@ -1,6 +1,17 @@
 {
+  "name": "DarkBot-OS",
+  "version": "1.0.0",
+  "description": "A robust and modular Pi Hat system",
+  "main": "index.js",
   "scripts": {
-    "start": "node updater.js & node server.js",
-    "restart": "pm2 restart all" // assuming you are using pm2 for process management
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "pm2 restart all"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.5.6"
   }
 }
