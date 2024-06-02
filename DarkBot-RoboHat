@@ -1,0 +1,27 @@
+DarkBot-Hat
+
+The concept of a Industrial Spec Pi hat, Rather than a cheap shoddy robo hat, Something overkill.
+Everything should be modular and easy to swap out. The last Robo-Hat you well ever need.
+
+Pin header mounted Teensy 4.1 to supply PWM and ADC via 1mbs UART isolated by ADUM1201.
+
+1mbs UART HW Serial interface to the PI through ADUM1201 energy efficient digital isolators
+
+Daisylink port also protected by ADUM1201 energy efficient digital isolators
+
+4 DC Motor outputs through ADUM1201 energy efficient digital isolators driving DRV8833 heatsinked motor drivers. All Push Fit modules. 
+This provides a barrier of protection for logic devices and ensures clean transmition of signals and no noise getting back to the MCU's.
+
+If you let out the pixies it will be localized reducing replacement part cost to a couple of buck's. 
+
+*4 DC motors (1.5amp constant, 3 amp peak)
+*10 Dedicated Servo Channels
+*8 Multiuse IO supporting Digital or ADC. 
+
+
+Built in battery voltage detector
+
+ADUM1201 energy efficient digital isolators protect the Dedicated Hardware Serial Expansion Port to add more IO using custon IO Extenders 
+(For Example: Enabling 16 ADC's and 16 PWM or servo connections as an expansion, 
+Or daisylink another Hat to gain 4 more DC Motors and 10 more servos and 8 more MultiuseIO's 
+and another expansion port!. 2 Hats = 8 motors, 20 servos and 16 GPIO, And you can add more...)
