@@ -1,0 +1,35 @@
+Setting Up a Self-Updating Node.js Server for DarkBot-OS
+
+This guide will walk you through setting up a Node.js server for DarkBot-OS that can automatically update itself from a GitHub repository. By the end of this tutorial, you'll have a server that checks for updates, downloads the latest code, and restarts itself to apply the updates.
+Prerequisites
+
+    Node.js installed on your system
+    A GitHub account with access to the DarkBot-OS repository
+    Basic knowledge of Node.js and GitHub
+
+Step 1: Clone the DarkBot-OS Repository
+
+First, clone the DarkBot-OS repository to your local machine:
+
+bash
+
+git clone https://github.com/3disturbed/DarkBot-OS.git
+cd DarkBot-OS
+
+Step 2: Install Required Packages
+
+Navigate to your project directory and install the necessary packages:
+
+bash
+
+npm install express http ws serialport node-fetch tar fs-extra
+
+Step 3: Run the Server
+
+Start your server using the start script:
+
+bash
+
+npm start
+
+Your Node.js server will now periodically check for updates from the specified GitHub repository, download the latest code if a new commit is found, and restart itself to apply the update. You can interact with the server using the simple HTML frontend provided.
