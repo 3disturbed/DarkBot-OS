@@ -120,6 +120,9 @@ Access the web interface at `http://your-raspberry-pi-ip:3000` to begin configur
 ## Contributing
 We welcome contributions from the community! Whether you want to add new features, improve existing functionality, or fix bugs, we appreciate your help. Please read our [contributing guidelines](CONTRIBUTING.md) to get started.
 
+if you want to support my open-source work
+https://www.patreon.com/Firebeard
+
 ## License
 DarkBot-OS is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
